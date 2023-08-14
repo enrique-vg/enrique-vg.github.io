@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Código - Enrique Vallés - EVG .  HTML5 UP build upon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="code-display1/color-brewer.min.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>EVG</strong> <span> Inicio</span></a>
+						<nav>
+							<a href="#menu">Menú</a>
+						</nav>
+						<nav>
+						<a href="contacto.html" class="logo"><strong>MAIL</strong> <span>Contacto</span></a>
+					    </nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html" class="button primary fit">Página Inicio</a></li>
+							<li><a href="programacion.html">Programación</a></li>
+							<li><a href="creatividad.html">Creatividad</a></li>
+							<li><a href="curriculumEVG.html">Curriculum Vitae</a></li>
+							<li><a href="WebEnConstruccion.html" class="link">Crecimiento y Curiosidades</a></li>
+							<li><a href="contacto.html" class="button fit">Contacto</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>3.Código.- "Práctica de Crear un Blog":</h1>
+									</header>
+										<img src="images/pic08p3.jpg" style="height:200px; border-radius:0.85em;" alt="" data-position="center center"/>
+                             
+                                    <div class="field">
+									<label for="message">Imagen de referencia</label>
+									<br>
+									<label>Código de Programación en 2 Bloques [(1)HTML y (2)CSS]:</label>
+									<label>- (1) Boloque de HTML:</label>
+									<!--Inicio Texto Codigo textarea-->		
+                                <script src="code-display1/highlight.min.js"></script>
+								<script>hljs.highlightAll();</script>
+								<pre><code>
+ 								<textarea rows="50">
+<!--Inicio Texto Codigo-->	 
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Blog de prueba</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="p3PractBlogStyle.css"/>
+	</head>
+	<body>
+			<header id="titulo">
+					<h1>BLOG DE ENRIQUE</h1>       
+			</header>
+				<section class="contenido">
+					<article class="post">
+							<h2>Titulo del articulo</h2>
+							<p>Descripción o intro articulo</p>
+							<img src="img/Pract 2020 11 07 Cascos 7.png"/>
+							<p>Casco guerrero y más articulo</p>
+					</article>
+					<article class="post">
+							<h2>Titulo del articulo2</h2>
+							<p>Descripción o intro articulo2</p>
+							<img src="img/Pract 2020 11 09 40min Cascos 9.png"/>
+							<p>Casco guerrero 2 con dorados y más articulo</p>
+					</article>
+			
+			</section>
+			<footer> 
+					<a class="inicio" href="#titulo">Ir al principio de la página </a>
+				<section> 
+					<a class="mail" href="mailto:hanquique@gmail.com">Enviarme correo. Clic aquí</a>       
+					<p class="copyright"> Copyright 2022</p>
+				</section>
+			</footer>
+	</body>
+	</html>
+<!--Fin Texto Codigo-->
+								</textarea>
+								</code></pre> 
+					
+								<br>
+								<label>- Código de Programación en 2 Bloques (CSS y HTML)</label>
+								<label>  - (2) Boloque de CSS:</label>
+
+								<!--Inicio Texto Codigo 2 textarea-->		
+								<pre><code>
+								<textarea rows="50">
+
+	html {
+		font-family: 'Montserrat', sans-serif;
+	}
+	
+	body{
+		margin:0;
+		background-color: #efefef;
+	}
+	
+	header {
+		background-color: #275059;
+		text-shadow: 3px 4px 5px #010326;
+		color: #F2F2F2;
+		box-shadow: 0.3rem 0.3rem 1rem 0.5rem rgba(0,0,0,0.75);
+		padding: 1.5rem 2rem;
+	}
+	
+	@media screen and (min-width: 768px) {
+		header {
+			padding: 2.5rem 2rem;
+		}
+	}
+	
+	h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+	
+	@media screen and (min-width: 768px) {
+		h1 {
+			font-size: 3rem; 
+		}
+	}
+	
+	.contenido {
+		min-width: 275px;
+		margin: 40px auto;
+		width: 90%;
+	}    
+	
+	@media screen and (min-width: 768px) {
+		.contenido {
+			width: 45%;
+		}
+	}    
+	
+	section article {
+		transition: all 0.3s ease;
+		background-color: #0B0A26;
+		color: #F2F2F2;
+		margin: 1.5rem 0;
+		border-radius: 1rem;
+		padding: 0.25rem 0;
+		cursor:pointer;
+	}
+	
+	section article:hover {
+		box-shadow: 0.3rem 0.3rem 1rem 0.5rem rgba(0,0,0,0.75);
+	}
+	
+	section article h2, section article p {
+		padding: 0 1.5rem;
+	}
+	
+	h2 {
+		margin:35px 15px 15px;
+	}
+	
+	p{
+		margin: 15px;
+	}
+	
+	img {
+		width: 75%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border :10px solid #275059;
+	}
+	
+	footer section, footer p, footer a, footer section .mail {
+		font-size: 1rem;
+		padding: 0.5rem;
+		display: block;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	footer {
+		background-color: #275059;
+		padding: 2rem;
+		color: #F2F2F2;
+	}
+	
+	footer section .inicio {
+		display: block;
+		text-align: center;
+	}
+	
+	footer p{
+		margin: 0;
+	}
+	
+	footer a {
+		transition: color 1s ease;
+		color: #F2F2F2;
+		text-decoration: none;    
+	}
+	
+	footer a:hover {
+		color:cornflowerblue;
+	}
+	
+	@media screen and (min-width: 768px) {
+		footer section .mail {
+			float:right;
+		}
+		footer section p.copyright{
+			display:inline;
+			float:left;
+		}
+	}    
+
+								</textarea>
+								</code></pre> 
+								<!--Fin Texto Codigo 2-->
+							</section>
+
+						<button type="button" 
+							style="box-shadow: inset 0 0 0 2px #ffffff; display:block; margin-right: auto; margin-left: auto; border:6px solid #73C6D9; background-color:  #2a2f4a; width: 250px; height:100px;" >
+							<a href="programacion.html#p3"><strong style="color:#73C6D9; font-size: small;">Volver atras</strong></a>    
+						</button>
+					
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/enrique-valles-gimenez/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/EnriqueEVG" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+<!--								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+-->							</ul>
+							<ul class="copyright">
+								<li><a href="contacto.html"> &copy; Copyright 2022 Enrique Vallés [Final Design] / Build upon HTML5 UP [Base Design]</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

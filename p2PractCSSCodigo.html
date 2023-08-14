@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Código - Enrique Vallés - EVG .  HTML5 UP build upon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="code-display1/color-brewer.min.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>EVG</strong> <span> Inicio</span></a>
+						<nav>
+							<a href="#menu">Menú</a>
+						</nav>
+						<nav>
+						<a href="contacto.html" class="logo"><strong>MAIL</strong> <span>Contacto</span></a>
+					    </nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html" class="button primary fit">Página Inicio</a></li>
+							<li><a href="programacion.html">Programación</a></li>
+							<li><a href="creatividad.html">Creatividad</a></li>
+							<li><a href="curriculumEVG.html">Curriculum Vitae</a></li>
+							<li><a href="WebEnConstruccion.html" class="link">Crecimiento y Curiosidades</a></li>
+							<li><a href="contacto.html" class="button fit">Contacto</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>2.Código.- "Primera Práctica de CSS":</h1>
+									</header>
+										<img src="images/pic08p2.jpg" style="height:200px; border-radius:0.85em;" alt="" data-position="center center"/>
+			
+<!--Inicio Texto Codigo-->	                               
+                                    <div class="field">
+									<label for="message">Imagen de referencia</label>
+									<br>
+									<label>Código de Programación en 2 Bloques [(1)HTML y (2)CSS]:</label>
+									<label>- (1) Boloque de HTML:</label>
+									<!--Inicio Texto Codigo textarea-->		
+                                <script src="code-display1/highlight.min.js"></script>
+								<script>hljs.highlightAll();</script>
+								<pre><code>
+ 								<textarea rows="50">
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+			<title>Document</title>
+			<link rel="stylesheet" href="pCSSMiEstilo.css"/>
+	</head>
+	<body>
+		<h1 id="titulo1">TITULO</h1>
+		<p class="parrafoTipo1">este es mi texto de parrafo 1</p>
+		<p class="parrafo1">este es mi texto de parrafo 2</p>
+		<p class="parrafo1 especial">este es mi texto de parrafo 3</p>
+		<p class="especial">este es mi texto de parrafo 4</p>
+		<div>
+			<p>Hola y se Feliz</p>
+			<h2>Soy un Subtitulo</h2>
+			<h3>Soy un Sub-Subtitulo</h3>
+		</div>
+		<P Class="exanegro">Color Negro Puro en Exadecimal</P>
+		<P Class="exablanco">Color Blanco Puro en Exadecimal</P>
+		<P Class="exarojo">Color Rojo Intenso en Exadecimal</P>
+		<P Class="exaverde">Color Verde Intenso en Exadecimal</P>
+		<P Class="exaazul">Color Azul Intenso en Exadecimal</P>
+		<P Class="exagrismassuave">Color Gris más suave en Exadecimal</P>
+		<P Class="exagrismedio">Color Gris Medio en Exadecimal</P>
+		<P Class="RGBnegro">Color Negro en RGB</P>
+
+		<P Class="MarcoSolido">Marco alrededor del texto</P>
+		<P Class="MarcoPunteado">Marco Punteado alrededor del texto</P>
+		<P Class="Marco3D">Marco 3D alrededor del texto</P>
+
+		<P Class="Marco2">Marco Definido alrededor del texto</P>
+
+		<article id="fondo">
+			Soy la propiedad de Background
+		</article>
+		<article id="fondo2">
+			Soy la propiedad de Background 2
+		</article>
+		<article id="fondo3">
+			Soy la propiedad de Background 3
+		</article>
+		<article id="fondo4">
+			Soy la propiedad de Background 4
+		</article>
+	</body>
+	</html>
+
+								</textarea>
+								</code></pre> 
+								<!--Fin Texto Codigo-->
+
+								<br>
+								<label>- Código de Programación en 2 Bloques (CSS y HTML)</label>
+								<label>  - (2) Boloque de CSS:</label>
+
+								<!--Inicio Texto Codigo 2 textarea-->		
+								<pre><code>
+								<textarea rows="50">
+
+	#titulo1{
+		color:tomato;
+	}
+	.parrafoTipo1{
+		color:blueviolet;
+	}
+	p.parrafo1{
+		color:aqua;
+	}
+	p.especial{
+		color:aquamarine;
+	}
+	
+	div p{
+		color:blue;
+	}
+	div h2, div h3{ /*Solo cambiará los h3 que estén dentro de div*/
+		color:brown;
+	}
+	*{
+		font-size:24px;
+		color:black; /*Esto es un comentario: Solo cambiara 
+		el color de los que no tengan estilo definido*/
+	}
+	/* 
+	Esto es un comentario  para dar información sobre lo programado
+	*/
+	
+	/*COLORES:*/
+	.exanegro{
+		color:#000;  /*En exadecimal los colores van del 0 al f precedidos
+		de #, siendo 000 la ausencia de color (negro) y fff la suma de todos
+		(blanco) y se pueden definir con 3 o 6 numeros*/
+	}
+	.exablanco{ color:#fff; }
+	.exarojo{ color:#f00;}
+	.exaverde{ color:#0f0;}
+	.exaazul{ color:#00f;}
+	.exagrismassuave{ color:#eee;}
+	.exagrismedio{ color:#777;}
+	
+	.RGBnegro{
+		color:rgb(0,0,0);
+	}
+	
+	.MarcoSolido {    border: 5px black solid;}
+	.MarcoPunteado{    border: 6px blueviolet dotted;}
+	.Marco3D{    border: 7px goldenrod outset;}
+	
+	.Marco2{
+		border-style: dashed;
+		border-color: darkcyan;
+		border-radius: 15px;
+		border-width: 1rem;
+	}
+	#fondo{
+		background-color: rgb(255, 204, 0);
+	}
+	#fondo2{
+		background-color: rgba(0,0,0,0.3);
+	}
+	#fondo3{
+		background-color: rgb(132, 0, 255);
+		opacity: 0.5;
+		background-image: url("img/Casco8.png");
+		height: 300px;
+		background-size:200px;
+		background-repeat: repeat-y; 
+		background-position: center top;
+	}
+	#fondo4{
+		height: 350px;
+		background:aqua url("img/Casco8.png")
+		repeat-y center bottom /400px 400px;
+	}
+
+								</textarea>
+								</code></pre> 
+								<!--Fin Texto Codigo 2-->
+							</section>
+
+						<button type="button" 
+							style="box-shadow: inset 0 0 0 2px #ffffff; display:block; margin-right: auto; margin-left: auto; border:6px solid #73C6D9; background-color:  #2a2f4a; width: 250px; height:100px;" >
+							<a href="programacion.html#p2"><strong style="color:#73C6D9; font-size: small;">Volver atras</strong></a>    
+						</button>
+					
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/enrique-valles-gimenez/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/EnriqueEVG" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+<!--								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+-->							</ul>
+							<ul class="copyright">
+								<li><a href="contacto.html"> &copy; Copyright 2022 Enrique Vallés [Final Design] / Build upon HTML5 UP [Base Design]</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

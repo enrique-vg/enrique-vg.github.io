@@ -1,0 +1,75 @@
+#titulo1{
+    color:tomato;
+}
+.parrafoTipo1{
+    color:blueviolet;
+}
+p.parrafo1{
+    color:aqua;
+}
+p.especial{
+    color:aquamarine;
+}
+
+div p{
+    color:blue;
+}
+div h2, div h3{ /*Solo cambiará los h3 que estén dentro de div*/
+    color:brown;
+}
+*{
+    font-size:24px;
+    color:black; /*Esto es un comentario: Solo cambiara 
+    el color de los que no tengan estilo definido*/
+}
+/* 
+Esto es un comentario  para dar información sobre lo programado
+*/
+
+/*COLORES:*/
+.exanegro{
+    color:#000;  /*En exadecimal los colores van del 0 al f precedidos
+    de #, siendo 000 la ausencia de color (negro) y fff la suma de todos
+    (blanco) y se pueden definir con 3 o 6 numeros*/
+}
+.exablanco{ color:#fff; }
+.exarojo{ color:#f00;}
+.exaverde{ color:#0f0;}
+.exaazul{ color:#00f;}
+.exagrismassuave{ color:#eee;}
+.exagrismedio{ color:#777;}
+
+.RGBnegro{
+    color:rgb(0,0,0);
+}
+
+.MarcoSolido {    border: 5px black solid;}
+.MarcoPunteado{    border: 6px blueviolet dotted;}
+.Marco3D{    border: 7px goldenrod outset;}
+
+.Marco2{
+    border-style: dashed;
+    border-color: darkcyan;
+    border-radius: 15px;
+    border-width: 1rem;
+}
+#fondo{
+    background-color: rgb(255, 204, 0);
+}
+#fondo2{
+    background-color: rgba(0,0,0,0.3);
+}
+#fondo3{
+    background-color: rgb(132, 0, 255);
+    opacity: 0.5;
+    background-image: url("img/Casco8.png");
+    height: 300px;
+    background-size:200px;
+    background-repeat: repeat-y; 
+    background-position: center top;
+}
+#fondo4{
+    height: 350px;
+    background:aqua url("img/Casco8.png")
+    repeat-y center bottom /400px 400px;
+}

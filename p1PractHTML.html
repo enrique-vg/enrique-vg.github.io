@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Práctica HTLM</title>
+       <style> table, th, td {border:1px solid black;} </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <Tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </Tr>
+        </thead>
+        <tbody>
+            <Tr>
+                <td>Boligrafo</td>
+                <td>9,90 €</td>
+            </Tr>
+            <Tr>
+                <td>Lapicero Negro</td>
+                <td>Gratis</td>
+            </Tr>
+        </tbody>
+        <tfoot>
+            <Tr>
+                <td>TOTAL:</td>
+                <td>9,90 €</td>
+            </Tr>
+        </tfoot>
+        
+    </table>
+    <!--ul es lista NO ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol es lista Ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li>Subelemento 1</li>
+                <li>Subelemento 2</li>
+                <li style="list-style-type: lower-alpha;">E1</li>
+                <li style="list-style-type: lower-alpha;">E2</li>
+                <li style="list-style-type: lower-roman;">R1</li>
+                <li style="list-style-type: lower-roman;">R2</li>
+                <li style="list-style-type: lower-roman;">R3</li>
+            </ol>
+        </li>
+    </ol>
+     <form action="formulario" method="Post">
+         <label for="nombre">Introduzca su Nombre sin apellidos:</label>
+         <input type="text" id="nombre" name="nombre" placeholder="Nombre Propio"/>
+         <br>
+         <label for="apellido">Introduzca su apellido:</label>
+         <input type="text" id="apellido" name="apellido" placeholder="Primer Apellido"/>
+         <br>
+         <label for="comentario">Introduzca comentarios:</label>
+         <br>
+         <textarea cols="50" rows="10" type="comentario" id="comentario" name="comentario" placeholder="Intruducir comentario"></textarea>
+         <br>
+         <button type="button"><img src="img/Pract 2020 11 07 Cascos 7.png" width="300"/></button>
+         <button type="reset">tipo reset</button>
+         <button type="submit">submit</button>
+     </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi 3 heading</h3>
+    <h4>Mi 4 heading</h4>
+    <h5>Mi 5 heading</h5>
+    <h6>Mi 6 heading</h6>
+    <p>Quiquito es Feliz <br>y aun puede ser más feliz</p>
+    <p>para que además de serlo lo parezca</p>
+    <hr>
+    <h2>Para eso vamos a <span style="color: blueviolet;">animar el ambiente</span></h2>
+    <p>Con una canción</p>
+    <p>Erase una vez un programador <br><br><br> que encontro su camino</p>
+    <!--Este texto es un comentario para ver
+         que no sale en la web-->
+    <a target="_blank" href="https://www.google.com">Ir a Google</a>
+    <br>
+    <img src="img/Pract 2020 11 07 Cascos 7.png" height="200"/>
+    
+    <!--Botón añadido para Volver a Progsramación-->
+    <button type="button" 
+            style="box-shadow: inset 0 0 0 2px #ffffff; border:6px solid #73C6D9; background-color:  #2a2f4a; width: 250px; height:50px;" >
+           <a href="programacion.html#p1"><strong style="color:#73C6D9; font-size: small;">Volver atras</strong></a>    
+    </button>
+</body>
+</html>       
